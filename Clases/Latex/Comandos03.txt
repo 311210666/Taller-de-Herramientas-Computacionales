@@ -1,0 +1,322 @@
+    1  ls
+    2  cd Descargas/
+    3  ls
+    4  gnuplot
+    5  exit
+    6  man ls
+    7  clear
+    8  sudo apt update
+    9  sudo apt upgrade
+   10  cd Descargas/
+   11  ls
+   12  sudo dpkg -i google-chrome-stable_current_amd64.deb 
+   13  sudo apt install libappindicator1
+   14  sudo apt install libappindicator7
+   15  sudo apt install -f
+   16  exit
+   17  sudo apt install gnuplot
+   18  gnuplot
+   19  sudo reboot
+   20  reboot
+   21  txt
+   22  gedit
+   23  sudo shutdown -h now
+   24  gedit
+   25  sudo shutdown -h now
+   26  gedit
+   27  GEDIT
+   28  gedit
+   29  shutdown -h now 
+   30  shutdown -h now
+   31  calculadora
+   32  reboot
+   33  sudo apt -get install msttcorefonts
+   34  sudo apt-get install msttcorefonts
+   35  sudo shutdown-h now
+   36  sudo shutdown -h now
+   37  reboot
+   38  gedit
+   39  sudo shutdown -h now
+   40  reboot
+   41  gedit
+   42  sudo shutdown -h now
+   43  sudo shutdow -h now
+   44  123456789
+   45  reboot
+   46  gedit
+   47  calculator
+   48  sudo shutdown -h now
+   49  reboot
+   50  gedit
+   51  sudo shutdown -h now
+   52  CURSOR
+   53  reboot
+   54  gedit
+   55  sudo shutdown -h now
+   56  reboot
+   57  GEDIT
+   58  gedit
+   59  reboot
+   60  gedit
+   61  sudo shhutdown -h now
+   62  sudo shutdown -h now
+   63  gedit
+   64  sudo apt install playonlinux
+   65  sudo apt autoremove
+   66  clear
+   67  sudo apt-get install 0ad
+   68  0ad
+   69  gedit
+   70  sudo shutdown -h now
+   71  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+   72  sudo add-apt-repository 'deb [arch=amd64,i386] https://cran.rstudio.com/bin/linux/ubuntu xenial/'
+   73  123456789
+   74  sudo apt-get update
+   75  sudo apt-get install r-base
+   76  sudo -i R
+   77  gedit
+   78  snap install spotify
+   79  gedit
+   80  reboot
+   81  cowsay "Carlos Pan es GAY"
+   82  sudo apt install cowsay
+   83  cowsay "Carlos Pan es super super GAY"
+   84  GEDIT
+   85  gedit
+   86  lsb_release
+   87  sudo shutdown -h now
+   88  gedit
+   89  sudo shutdown -h now
+   90  gedit
+   91  cowsay
+   92  gksu gedit /etc/modules
+   93  sudo apt install gksu
+   94  gksu gedit /etc/modules
+   95  reboot
+   96  gedit
+   97  sudo apt install sl
+   98  ls
+   99  sl
+  100  exit
+  101  gedit
+  102  python3
+  103  exit
+  104  gparted
+  105  sudo apt install gparted
+  106  exit
+  107  gedit
+  108  sublime
+  109  gedit
+  110  lbs_relesase -a
+  111  lsb_relesase -a
+  112  lsb_release -a
+  113  wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+  114  sudo apt-get install apt-transport-https
+  115  echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+  116  sudo apt-get install sublime-text
+  117  sudo apt-get update
+  118  sudo apt-get install sublime-text
+  119  sublime
+  120  ifconfig
+  121  python3
+  122  cd Escritorio/
+  123  clear
+  124  mkdir codigo
+  125  cd codigo
+  126  clear
+  127  touch codigo.c
+  128  nano codigo.c 
+  129  gcc -lm codigo.c 
+  130  nano codigo.c
+  131  gcc -lm codigo.c 
+  132  nano codigo.c 
+  133  gcc -lm codigo.c 
+  134  clear
+  135  ls
+  136  ./codigo.c
+  137  chmod 755 codigo.c 
+  138  ./codigo.c
+  139  nano codigo.c 
+  140  gcc -lm codigo.c 
+  141  ./a.out 
+  142  nano codigo.c 
+  143  gcc -lm codigo.c 
+  144  ./a.out 
+  145  nano codigo.c 
+  146  gcc -lm codigo.c 
+  147  ./a.out 
+  148  nano codigo.c 
+  149  gcc -lm codigo.c 
+  150  ./a.out 
+  151  nano codigo.c 
+  152  gcc -lm codigo.c 
+  153  ./a.out 
+  154  nano codigo.c 
+  155  gcc -lm codigo.c 
+  156  nano codigo.c 
+  157  gcc -lm codigo.c 
+  158  nano codigo.c 
+  159  gcc -lm codigo.c 
+  160  nano codigo.c 
+  161  gcc -lm codigo.c 
+  162  nano codigo.c 
+  163  gcc -lm codigo.c 
+  164  nano codigo.c 
+  165  gcc -lm codigo.c 
+  166  nano codigo.c 
+  167  gcc -lm codigo.c 
+  168  nano codigo.c 
+  169  gcc -lm codigo.c 
+  170  clear
+  171  ./a.out 
+  172  killall google-chrome
+  173  killall chrome
+  174  wxit
+  175  exit
+  176  python3
+  177  python3
+  178  python 3
+  179  python3
+  180  nano holi.py
+  181  chmod 777 holi.py 
+  182  ./holi.py 
+  183  nano holi2.py
+  184  chmod 777 holi2.py 
+  185  ./holi2.py 
+  186  holi2.py
+  187  python holi2.py
+  188  python holi.py
+  189  nano holi.py
+  190  python holi.py
+  191  sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
+  192  python3
+  193  sudo apt install gnome-tweak-tool
+  194  init 6
+  195  reboot
+  196  sudo shutdown -h +60
+  197  $ sudo find nombre_directorio -name nombre_archivo
+  198  cd Descargas/
+  199  javac Cliente.java 
+  200  exit
+  201  cd descargas
+  202  CD descargas
+  203  sudo add-apt-repository ppa:kile/stable
+  204  kile
+  205  sudo apt install kile
+  206  kile
+  207  uname -a
+  208  ls -1 /bin/bash
+  209  top
+  210  ls
+  211  pwd
+  212  cd /
+  213  ls
+  214  ls /home/
+  215  ls /opt/
+  216  df -lh
+  217  uname -a
+  218  file /bin /bash
+  219  file /bin/bash
+  220  touch /tmp/algo
+  221  ls -1 /tmp/algo
+  222  ls -1 /bin/bash
+  223  ls -l /bin/bash
+  224  chmod 700/tmp/algo
+  225  chmod700/tmp/algo
+  226   
+  227  chmod 700 /tmp/algo
+  228  ls -l /tmp/algo
+  229  chmod 751 /tmp/algo
+  230  /tmp/algo
+  231  echo PATH
+  232  set
+  233  pwd
+  234  cd /tmp
+  235  ./algo
+  236  set | less
+  237  file *
+  238  pwd
+  239  cd
+  240  file *
+  241  tigervnc
+  242  apt install tigervnc-viewer
+  243  sudo apt install tigervnc-viewer
+  244  tigervnc
+  245  tigervnc-viewer
+  246  vncviewer
+  247  vg
+  248  guthub
+  249  github
+  250  sudo apt get update
+  251  sudo apt-get update
+  252  sudo apt-get upgrade
+  253  sudo apt-get install git
+  254  git config --global user.mail "stephescsan@ciencias.unam.mx"
+  255  git config --global user.name "311210666"
+  256  git init
+  257  cd Taller de herramientas computacionales
+  258  ls
+  259  cd Escritorio
+  260  ls
+  261  cd Taller de herramientas computacionales
+  262  cd Tallerdeherramientacomputacionales
+  263  cd Taller\ de\ herramientas\ computacionales/
+  264  git clone https://github.com/311210666/Taller-de-Herramientas-Computacionales.git
+  265  git status
+  266  ls
+  267  cd Taller-de-Herramientas-Computacionales/
+  268  ls
+  269  git status
+  270  git add *
+  271  git commit
+  272  ls
+  273  git status
+  274  git commit
+  275  sudo su
+  276  vnc-viewer
+  277  vnc vierwer
+  278  vncviewer
+  279  vncvuewer
+  280  vncviewer
+  281  ls
+  282  cd escritorio
+  283  ls - la
+  284  ls
+  285  cd Escritorio/
+  286  ls
+  287  cd Taller\ de\ herramientas\ computacionales/
+  288  cd Taller-de-Herramientas-Computacionales/
+  289  ls
+  290  vi README.md
+  291  vi README.md 
+  292  git add *
+  293  ls
+  294  git add *
+  295  git status
+  296  git pull
+  297  git add *
+  298  git status
+  299  git commit
+  300  git config --global user.email "stephescsan@ciencias.unam.mx" 
+  301  git config --global user.name "311210666"
+  302  git commit
+  303  ls -la
+  304  ls .git/
+  305  ls .git/ -la
+  306  ls
+  307  sudo chown -R stepahnie.stephanie .gir 
+  308  sudo chown -R stephanie.stephanie .gir 
+  309  sudo chown -R stephanie.stephanie .git 
+  310  git commit
+  311  ls
+  312  mkdir -p Clases/Latex
+  313  mkdir -p Clases/Programas
+  314* cd 
+  315  cd Escritorio/Taller\ de\ herramientas\ computacionales/Taller-de-Herramientas-Computacionales/
+  316  vi Clases/Latex/03.txt
+  317  git add *
+  318  git status
+  319  git commit -m "se creo el archivo 03 y los directorios"
+  320  git push
+  321  history
+  322  history > Clases/Latex/Comandos03.txt
