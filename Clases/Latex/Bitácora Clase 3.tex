@@ -1,0 +1,46 @@
+\documentclass [letterpaper, 12 pts, oneside]{article} 
+\usepackage[utf8]{inputenc}
+\title{\Huge Taller de Herramientas Computacionales}
+\author{Stephanie Escobar Sánchez}
+\date{14-enero-2019}
+
+\begin{document}
+	\maketitle
+
+	\newpage
+	
+	\title{\Huge Bitácora clase 3} \\
+	\\
+
+	Lo primero que hicimos en la clase 3 fue revisar que nuestra cuenta en github funcionara bien y sin problemas, ya que a partir de ese momento era importante que se subiera todo a github para no perder información.\\
+	Es muy importante siempre que empecemos a trabajar dar \textit{git pull} Para bajar las actualizaciones que se hayan hecho desde la página. Al final, para guardar hay que dar \textit{git push}\\
+	\\
+	También vimos algunas cosas de los archivos y directorios de los sistemas de linux, como que si empiezan con un punto son archivos ocultos, y esto permite que las personas no los borren por error o que desconfiguren cosas importantes de la computadora, la extensión .config es de los archivos que tienen que ver con la configuración y también es una forma de saber son importantes.\\
+	\\
+Aprendimos a utilizar \textbf{vi}, un editor de textos, aquí tuvimos problemas en el tema de distribuciones, ya que los comandos para guardar y salir son diferentes en fedora y ubuntu. En el caso de fedora es más difícil ya que siempre hay que poner pone esc y :, :wq para salir y guardar y :q! para salir sin modificar, es ubunto el proceso es más sencillo, ya que abajo tiene un pequeño menú que te indica como salir, guardar, editar, etc. Es importante saber usar \textbf{vi} debido a que en este editor es donde ponemos hacer comentarios de los archivos que se suben a la nube por medio de github después haber puesto el comando \textit{git commit}. \textit{git commit} actualiza el git en la red, \textit{git commit -m} "comentario" Sirva para evitar que abra el vi y comentar directo.\\
+\\
+Después era importante verificar que se podian guardar bien los documentos, en mi caso no era así, debido a que no tenía los permisos necesarios, ya que sin darme cuenta activé los permisos solo como root, utilizamos el comando \textit{sudo chown -R stephanie.stephanie .git} para solucionar el problema y a partir de ahí se pudo subir bien todo.\\
+\\
+Aprendimos otros comandos de linux para crear directorios 
+\textit{mkdir -p Clases/Latex} Para crear otro directorio, el directorio de clases, -p es un modificador y da la indicación de que cree todos directorios los necesarios para llegar a el directorio que creaste.\\
+\\
+	
+	\textit{ls -la > "Salida"} Lo redirecciona y crea un archivo.\\
+El directorio /tmp/ es el temporal y borra todo cuando se reinicia. por ello es bueno hacer pruebas ahí, ya que no afectará al equipo.\\
+	\\
+\textit{	history} es para ver todos los comandos\\
+	\\
+	\textit{history > Clases/Latex/Comandos03.txt} para crear un archivo del historial en la dirección dada y redireccionarlo.\\
+
+	
+	Finalmente platicamos sobre el curso y cómo resolver problemas, la clase esta enfocada a resolver el problemas, para lo cual es importante:\\
+	-definirlo con claridad\\
+	-analizar y delimitar el problema\\
+	-buscar la solución \\
+	-describirla a detalle\\
+	-solución general\\
+	
+
+	
+	
+\end{document}

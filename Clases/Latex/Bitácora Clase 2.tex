@@ -1,0 +1,34 @@
+\documentclass [letterpaper, 12 pts, oneside]{article} 
+\usepackage[utf8]{inputenc}
+\title{\Huge Taller de Herramientas Computacionales}
+\author{Stephanie Escobar Sánchez}
+\date{14-enero-2019}
+
+\begin{document}
+	\maketitle
+
+	\newpage
+	
+	\title{\Huge Bitácora clase 2} \\
+	\\
+	El segundo día del curso, en primer lugar pusimos a prueba de manera práctica los comandos que habíamos aprendido la clase anterior y verificamos que todos y funcionaran y de qué manera lo hacían. A ser todos sistemas linux no hubo problemas con los comandos que habíamos estado utilizando. Después utilizamos tigervnc para conectarnos a la computadora principal desde donde se estaba dando la clase así poder ver esa pantalla en nuestras computadoras, fue ahí donde empezamos a notar las diferencias en las distintas distribuciones que se están utilizando en la clase (fedora y ubuntu), en mi caso, ubuntu. Para ubuntu primero de tuvo que intallar el programa,para allí vimos que el comando \textit{apt} es para ubuntu y que en comando \textit{dnf} para fedora. Además, el programa que utilizamos tiene un nobre diferente ya que en ubuntu es vncviewer, muentras que en fedora es tigervnc. \\
+	\\
+	El resto de la clase lo dedicamos a instalar github, una plataforma que te permite interactuar con otros programadores, hacer trabajos en equipo, tener información guardada en la nube, entre otras cosas. Es un principio fue difícil de instalar debido a que no estábamos familiarizados con esa plataforma. \\
+	Lo primero que hicimos fue crear una cuenta desde la página de github y creamos el repositorio en el cual queremos guardar nuestros archivos  y después lo instalamos en la computadora.\\
+	Para instalar github utilizamos los siguientes comandos:\\
+	\\
+	\textit{sudo apt-get update} y \textit{sudo apt-get upgrade} para actualizar primero el sistema\\
+	\textit{sudo apt-get install git} Para instalar github\\
+	\textit{git config --global user.mail "El email que se va a usar"} Para configurar el email\\
+	\textit{git config --global user.name "usuario"} Para configurar el usuario\\
+    \textit{ git init}\\
+    \textit{ git clone "La dirección del repositorio que creamos"} Para clonar ese repositorio a nuestra computadora\\
+    
+    A partir de ese momento es importante que cada vez que hagamos cambios en el repositorio y los queramos subir a github pongamos los comandos:\\
+    \textit{git add *} para agregar todo lo que modificamos,
+    \textit{git commit} y \textit{git push para subirlo y actualizarlo}\\
+    Al final de la clase guardamos un documento de prueba para practicar.
+ 
+	
+	
+\end{document}
