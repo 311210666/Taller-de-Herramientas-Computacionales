@@ -18,19 +18,19 @@ def raiz1(x):
     h=x
     b=1.0
     e=0.0001
+    i=0 #Cuentael número de veces que se ejecuta el ciclo 
     while vAbsoluto(b-h)>e:
         h = (b+h)/2
         b = x/h
-    
+        i = i+1
+    print "el ciclo se repitió %d veces" % (i)
     return (b)
     
-print raiz1 
-
 print raiz1 (1)
 print raiz1 (4)
-print raiz (9)
-print raiz (9.1)
-print raiz (1000000)
+print raiz1 (9)
+print raiz1 (9.1)
+print raiz1 (1000000)
 
 
     
