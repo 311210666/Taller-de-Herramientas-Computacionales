@@ -1,0 +1,71 @@
+\documentclass{book}
+\usepackage [spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{biblatex}
+\title{Taller de Herramientas Computacionales}
+\author{Stephanie Escobar sánchez}
+\date{17-enero-19}
+
+\begin{document}
+	\maketitle
+	%Aquí inicia el índice de contenido del texto
+	\tableofcontents
+	\section*{Introducción} Este libro es para fortalecer los conocimientos de la materia THC\\
+	\url{www.google.com}\\
+	\hyperref[Google]{www.google.com}
+
+	\chapter{Uso básico de Linux}
+	\section{Distribuciones de Linux}
+	\section{Comandos}
+	\chapter{Introducción a Latex}
+	\chapter{Introducción a Python}
+	\begin{verbatim}
+
+
+	#!/usr/bin/python2.7
+	# -*- coding: utf- 8 -*-
+	
+	print 'Hoy es miércoles'
+	'''
+	Stephanie Escobar Sánchez, 311210666
+	Taller de herramientas computacionales
+	Este es un programa que dice 'Hoy es miércoles'
+	
+	'''
+	
+	x = 10.5; y = 1.0/3; z = 15
+	#x, y, z = 10.5,1.0,15.3 (otra forma)
+	
+	H= """
+	El punto en R3 es:
+	(x, y, z) = %.2f, %g, %G)
+	""" % (x, y, z)
+	print H
+	
+	G= """
+	El punto en R3 es:
+	(x, y, z) = ({laX: .2f}, {laY:g}, {laZ:G})
+	""" .format (laX=x, laY=y, laZ=z)
+	print G
+	
+	import math as m
+	from math import sqrt
+	from math import sqrt as s
+	x = input("¿Cuál es el valor al que le quieres calcular la raíz cuadrada?")
+	print "la raiz cuadrada de %.2f es es %f" % (x, m.sqrt(x))
+	print sqrt (4)
+	print s(16.5)
+		\end{verbatim}
+		\input{/home/stephanie/Escritorio/THC/Taller-de-Herramientas-Computacionales/Clases/Latex/Prueba.py}
+		%solo si está en la misma ruta
+	\section*{Orientación a objetos}
+	
+	\begin{thebibliography}{9}
+\bibitem{libro}
+\textit{cualquier cosa}
+		Author bla bla, 2019
+	
+	\end{thebibliography}
+	
+\end{document}
