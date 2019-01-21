@@ -4,3 +4,5 @@
 *.gz
 *.out
 *.pdf
+*.toc
+*.xml
