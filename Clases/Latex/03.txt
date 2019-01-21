@@ -1,6 +1,0 @@
-Pasos para crear un repositorio en linux
-1. Contar con una cuenta de github
-2. El la terinal de Linux poner los comandos $ git config --global user.email "El email registrado" y $git config --global user.name "Nombre de usuario"
-3. Nos colocamos en la carpeta destinada para github con el comando $  cd 
-4. Dentro de la carpeta, para crear unicamente el repositorio utilizamos el comando $mkdir /el nombre del directorio
-5. Si lo que se quiere es crear un directorio dentro de otro, ponemos el modificador -p con el comando mkdir $mkdir -p /el directorio padre/directorio que queremos crear y así se pone la ruta completa 

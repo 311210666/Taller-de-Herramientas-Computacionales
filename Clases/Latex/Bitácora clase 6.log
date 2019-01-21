@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.11)  16 JAN 2019 16:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.17)  20 JAN 2019 14:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **"Bitácora clase 6.tex"
 (./Bitácora clase 6.tex
 LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
+Babel <3.18> and hyphenation patterns for 6 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -573,30 +573,41 @@ Package pdftex.def Info: /home/stephanie/Escritorio/THC/Taller-de-Herramientas-
 Computacionales/Clases/Latex/Imagenes/2.png  used on input line 28.
 (pdftex.def)             Requested size: 120.44786pt x 90.33589pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--37
+Underfull \hbox (badness 10000) in paragraph at lines 30--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--38
 
  []
 
 [2 </home/stephanie/Escritorio/THC/Taller-de-Herramientas-Computacionales/Clase
 s/Latex/Imagenes/2.png>] [3] (./Bitácora clase 6.aux) ) 
 Here is how much of TeX's memory you used:
- 2927 strings out of 494923
- 38757 string characters out of 6180742
- 94318 words of memory out of 5000000
- 6195 multiletter control sequences out of 15000+600000
- 10582 words of font info for 42 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 41i,7n,26p,586b,202s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 2929 strings out of 494861
+ 38778 string characters out of 6178804
+ 96458 words of memory out of 5000000
+ 6204 multiletter control sequences out of 15000+600000
+ 10928 words of font info for 43 fonts, out of 8000000 for 9000
+ 40 hyphenation exceptions out of 8191
+ 41i,7n,26p,658b,202s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb>
-Output written on "Bitácora clase 6.pdf" (3 pages, 112944 bytes).
+amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmti10.pfb>
+Output written on "Bitácora clase 6.pdf" (3 pages, 122208 bytes).
 PDF statistics:
- 39 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 43 PDF objects out of 1000 (max. 8388607)
+ 27 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

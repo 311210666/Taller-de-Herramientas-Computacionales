@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+\graphicspath{{/home/stephanie/Escritorio/THC/Taller-de-Herramientas-Computacionales/Clases/Latex/Imagenes/}}
+
+\title{\Huge Taller de Herramientas Computacionales}
+\author{Stephanie Escobar Sánchez}
+\date{18/enero/2019}
+\begin{document}
+	\maketitle
+\begin{center}
+	\includegraphics[scale=0.40]{1.png}	
+\end{center}
+\newpage
+\title{\Huge Bitácora clase 10} \\
+\\
+
+A las variables se les pueden reasignar valores, cuando se utiliza un \textit{while} todo lo que está a la derecha de el se evalúa y se reasigna, teniendo un nuevo valor cada que se repite en ciclo. Otra forma de reasignar variables en python es con el comando \textit{a+=10} que toma a a y le suma 10, después ese número es de nuevo a. La función \textit{bool ()} sirve para evaluar una variable y saber si una variable tiene contenido, si está vacía nos arrojará "false" y si la variable tiene algo dirá "true". También te regresa false cuando ell valor de la variable es cero.\\
+\\Después de ver las variables comenzamos con un tema importante de la clase: Las listas\\
+L=[ ] es una lista\\
+El comando \begin{verbatim}
+if bool (L):
+	print L 
+\end{verbatim}
+Solo imprime la lista si tiene elementos.\\
+\\
+
+\textit{L.append ()} sirve para agregar un elemento a la lista siempre que se use ese comando agregará el elemento al final de la lista y también es posible agregar una lista dentro de otra. \textit{L[0]} para ver el primer elemento de la lista y se refiere a que no tiene que avanzar ningún lugar para mostrarlo, es por ello que se usa el cero. \textit{len (L)} muestra la cantidad de elementos que tiene la lista. 
+
+\textit{L.insert(3,"otra cadena")} te permite insertar el  indice 3 un elemento y recorre los demás,  L.pop remueve un elemento si no se le dice cuál, borrará el último. Y podemos asignar el elemento que sacamos a una variable.\\
+\\
+
+El índice es la forma en la que yo accedo a un elemento dentro de la lista y la posición es uno más que el índice.\\
+
+\textit{while bool(L):\\
+L.pop()}\\
+Sirven para vaciar la lista. y \textit{L.extend()}  agrega elementos a la lista, \textit{L[3]+L[len(L)-1]} junta elementos de la lista. Para ejecutar una instrucción en todos los elementos de la lista se utiliza \textit{for in} \\
+\\
+\textit{a = Range (10)} permite crear una lista con los números de cero hasta uno antes del valor que le ponemos
+\textit{a = range (7, 15, 3)} es un intervalo de 7 a 15 con una separación de 3\\
+\\
+Los ciclos, condicionales, funciones, listas, valores numéricos y de cadena nos permiten hacer programas más complejos, siempre en un lenguaje de programación habrá estos comandos o sus equivalentes, y una vez sabiendo cómo resolver el problema se deben buscar las funciones que necesitamos en el lenguaje que queremos programar, es importante ver qué tipo de variables manejan, si tienen, condicionales, cómo funcionan, etc.\\
+
+
+
+
+
+
+
+\end{document}
