@@ -1,6 +1,6 @@
 #!/usr/bin/env python2.7
 # -*- coding: utf-8 -*-
-
+"""Calcula el n-esimo término de la suc de fib con n natural y 0"""
 def fib(n):
     
   

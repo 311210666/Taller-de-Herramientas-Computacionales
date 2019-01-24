@@ -12,7 +12,7 @@ def CF(x): #de grados celcius a fahrenheit
 
 def FC(x): #de grados fahrenheit a celcius
     F = x
-    C = (F - 32) *5.0/9
+    C = (F - 32) * (5.0/9)
     return C
    
 

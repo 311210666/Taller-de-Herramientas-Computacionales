@@ -66,6 +66,7 @@ def prom (a, b, c, d, e, f, g, h, i, j):
     pro= (a+b+c+d+e+f+g+h+i+j) / 10.0
     return pro
 
+
     
                                 
       

@@ -6,3 +6,4 @@ def spnn (n):
         return suma
     
 
+
