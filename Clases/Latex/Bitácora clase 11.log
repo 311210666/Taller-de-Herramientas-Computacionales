@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.17)  22 JAN 2019 13:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.17)  24 JAN 2019 12:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -549,8 +549,19 @@ Computacionales/Clases/Latex/Imagenes/1.png  used on input line 15.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/stephanie/Escritorio
 /THC/Taller-de-Herramientas-Computacionales/Clases/Latex/Imagenes/1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 18--32
+Underfull \hbox (badness 10000) in paragraph at lines 18--20
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--20
+
+ []
+
+
+Overfull \hbox (4.76923pt too wide) in paragraph at lines 23--35
+\OT1/cmr/m/n/10 ores a la lista? for 1 in range (n): Valor = in-put ("dame el v
+alor") L.append(valor)
  []
 
 [2] (./Bitácora clase 11.aux) ) 
@@ -568,7 +579,7 @@ fonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "Bitácora clase 11.pdf" (2 pages, 118718 bytes).
+Output written on "Bitácora clase 11.pdf" (2 pages, 120322 bytes).
 PDF statistics:
  38 PDF objects out of 1000 (max. 8388607)
  25 compressed objects within 1 object stream
