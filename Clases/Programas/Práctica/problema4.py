@@ -1,9 +1,9 @@
-'''¿Cómo representaría la siguiente
-malla en python:'''
+#No lo logré :(
 
-def malla (x,y):
-    x = range (-5,5,1)
-    y = range (-7, 7, 1)
+def Malla():  
+    M = []
+    for i in range(0,5,1):
+ 
 
-print malla (x,y)
+
     
