@@ -1,0 +1,8 @@
+*.pyc
+*.log
+*.aux
+*.gz
+*.out
+*.pdf
+*.toc
+*.xml
