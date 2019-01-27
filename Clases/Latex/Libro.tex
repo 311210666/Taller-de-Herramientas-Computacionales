@@ -1,0 +1,764 @@
+\documentclass{book}
+\usepackage [spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{biblatex}
+\usepackage{xcolor}
+\title{Taller de Herramientas Computacionales}
+\author{Stephanie Escobar sánchez}
+\date{27-enero-19}
+
+\begin{document}
+	\maketitle
+
+	\tableofcontents
+	\section*{Introducción} Este libro es para fortalecer los conocimientos de la materia THC\\
+	\url{www.google.com}\\
+
+
+	\chapter{Bitácoras de clase}
+	\section{Día 1}
+	
+	\title{\Huge Bitácora clase 1} \\
+
+El primer día hablamos sobre los objetivos del curso, la forma en la que trabajaríamos todos desde cero hasta poder formar programas. Hablamos de los temas que vamos a cubrir y de la forma de evaluación.\\
+Aprendimos qué es un sistema operativo y además de las distintas distribuciones de Linux, entre las que destacan:Debian, Ubuntu, fedora y linux mint.\\
+Además vimos distintos comandos en la terminal y su utilidad. Los comandos que vimos fueron los siguientes: \\
+\\
+\textit{uname -a:} Te permite ver la información del kernel, nombre, versión, y además es un método para saber si nuestra computadora es de 32 o 64 bits. \\
+\\
+\textit{ls -l bin/bash:} te da información de los permisos\\
+\\
+\textit{touch/tmp/"archivo":} Crea un archivo nuevo\\
+\\
+\textit{ls -1 /tmp/"archivo"}  muestra el archivo que creamos\\
+\\
+\textit{chmod 700 /tmp/"aerchivo":} Cambia los permisos del archivo, existen distintos tipos de permisos, de lectura, de escritura y de ejecución. Este comando nos permite cambiar los permisos a conveniencia. \\
+\\
+\textit{/tmp/"archivo":} Lo ejecuta\\
+\\
+\textit{echo:}muestra el contenido de una variable de estado\\
+\\
+\textit{set:} Muestra las variables de estado\\
+\\
+\textit{pwd:} Indica en que directorio estoy\\
+\\
+\textit{cd:} Me permite regresar a home\\
+\\
+\textit{cd /"un directorio":} Me permite cambiar de directorio.\\
+\\
+\textit{man:} Nos permite acceder al manual de los comandos.\\
+\\
+\\
+Finalmente hablamos sobre la importancia de la programación en carreras como las matemáticas aplicadas y sobre su gran utilidad en distintas áreas, todos los comandos que vimos fueron únicamente téoricos, ya que no teniamos acceso a computadores ese día. Aún así tuvimos una introducción a la programación.
+
+	\section{Día 2}
+		\title{\Huge Bitácora clase 2} \\
+	\\
+	El segundo día del curso, en primer lugar pusimos a prueba de manera práctica los comandos que habíamos aprendido la clase anterior y verificamos que todos y funcionaran y de qué manera lo hacían. A ser todos sistemas linux no hubo problemas con los comandos que habíamos estado utilizando. Después utilizamos tigervnc para conectarnos a la computadora principal desde donde se estaba dando la clase así poder ver esa pantalla en nuestras computadoras, fue ahí donde empezamos a notar las diferencias en las distintas distribuciones que se están utilizando en la clase (fedora y ubuntu), en mi caso, ubuntu. Para ubuntu primero de tuvo que intallar el programa,para allí vimos que el comando \textit{apt} es para ubuntu y que en comando \textit{dnf} para fedora. Además, el programa que utilizamos tiene un nobre diferente ya que en ubuntu es vncviewer, muentras que en fedora es tigervnc. \\
+	\\
+	El resto de la clase lo dedicamos a instalar github, una plataforma que te permite interactuar con otros programadores, hacer trabajos en equipo, tener información guardada en la nube, entre otras cosas. Es un principio fue difícil de instalar debido a que no estábamos familiarizados con esa plataforma. \\
+	Lo primero que hicimos fue crear una cuenta desde la página de github y creamos el repositorio en el cual queremos guardar nuestros archivos  y después lo instalamos en la computadora.\\
+	Para instalar github utilizamos los siguientes comandos:\\
+	\\
+	\textit{sudo apt-get update} y \textit{sudo apt-get upgrade} para actualizar primero el sistema\\
+	\textit{sudo apt-get install git} Para instalar github\\
+	\textit{git config --global user.mail "El email que se va a usar"} Para configurar el email\\
+	\textit{git config --global user.name "usuario"} Para configurar el usuario\\
+	\textit{ git init}\\
+	\textit{ git clone "La dirección del repositorio que creamos"} Para clonar ese repositorio a nuestra computadora\\
+	
+	A partir de ese momento es importante que cada vez que hagamos cambios en el repositorio y los queramos subir a github pongamos los comandos:\\
+	\textit{git add *} para agregar todo lo que modificamos,
+	\textit{git commit} y \textit{git push para subirlo y actualizarlo}\\
+	Al final de la clase guardamos un documento de prueba para practicar.
+	
+	\section{Día 3}
+	\title{\Huge Bitácora clase 3} \\
+	\\
+	
+	Lo primero que hicimos en la clase 3 fue revisar que nuestra cuenta en github funcionara bien y sin problemas, ya que a partir de ese momento era importante que se subiera todo a github para no perder información.\\
+	Es muy importante siempre que empecemos a trabajar dar \textit{git pull} Para bajar las actualizaciones que se hayan hecho desde la página. Al final, para guardar hay que dar \textit{git push}\\
+	\\
+	También vimos algunas cosas de los archivos y directorios de los sistemas de linux, como que si empiezan con un punto son archivos ocultos, y esto permite que las personas no los borren por error o que desconfiguren cosas importantes de la computadora, la extensión .config es de los archivos que tienen que ver con la configuración y también es una forma de saber son importantes.\\
+	\\
+	Aprendimos a utilizar \textbf{vi}, un editor de textos, aquí tuvimos problemas en el tema de distribuciones, ya que los comandos para guardar y salir son diferentes en fedora y ubuntu. En el caso de fedora es más difícil ya que siempre hay que poner pone esc y :, :wq para salir y guardar y :q! para salir sin modificar, es ubunto el proceso es más sencillo, ya que abajo tiene un pequeño menú que te indica como salir, guardar, editar, etc. Es importante saber usar \textbf{vi} debido a que en este editor es donde ponemos hacer comentarios de los archivos que se suben a la nube por medio de github después haber puesto el comando \textit{git commit}. \textit{git commit} actualiza el git en la red, \textit{git commit -m} "comentario" Sirva para evitar que abra el vi y comentar directo.\\
+	\\
+	Después era importante verificar que se podian guardar bien los documentos, en mi caso no era así, debido a que no tenía los permisos necesarios, ya que sin darme cuenta activé los permisos solo como root, utilizamos el comando \textit{sudo chown -R stephanie.stephanie .git} para solucionar el problema y a partir de ahí se pudo subir bien todo.\\
+	\\
+	Aprendimos otros comandos de linux para crear directorios 
+	\textit{mkdir -p Clases/Latex} Para crear otro directorio, el directorio de clases, -p es un modificador y da la indicación de que cree todos directorios los necesarios para llegar a el directorio que creaste.\\
+	\\
+	
+	\textit{ls -la > "Salida"} Lo redirecciona y crea un archivo.\\
+	El directorio /tmp/ es el temporal y borra todo cuando se reinicia. por ello es bueno hacer pruebas ahí, ya que no afectará al equipo.\\
+	\\
+	\textit{	history} es para ver todos los comandos\\
+	\\
+	\textit{history > Clases/Latex/Comandos03.txt} para crear un archivo del historial en la dirección dada y redireccionarlo.\\
+	
+	
+	Finalmente platicamos sobre el curso y cómo resolver problemas, la clase esta enfocada a resolver el problemas, para lo cual es importante:\\
+	-definirlo con claridad\\
+	-analizar y delimitar el problema\\
+	-buscar la solución \\
+	-describirla a detalle\\
+	-solución general\\
+	
+	\section{Día 4}
+	\title{\Huge Bitácora clase 4} \\
+	\\
+	Comenzamos la clase conociendo un poco más sobre python, para ello era importante tenerlo en la computadora, en el curso utilizamos python 2 debido a que ya hay muchos más paquetes desarrollados en éste que en python 3 ya que es muy nuevo. Para el caso de quienes llevamos nuestra computadora era importante saber qué versión tenemos por medio del comando \textit{-- version}, en mi caso solo tenía la versión 3.6, por lo que instalamos la versión 2.7. \\
+	\\
+	Para facilitar el uso de python con fines didácticos utilizamos idle-python, idle es un IDE (entorno de programacion integrado) esta desarrollado para el aprendizaje en python. Tiene un editor especializado, una forma de comunicarse con el intérprete e incorpora una herramienta para la depuración.\\
+	\\
+	Ya trabajando en python hicimos un problema de velocidad y aceleración muy sencillo, en el que primero tuvimos que pensar y resolver en el pizarrón, después de tener el resultado utilizamos python unicamente como una calculadora y aprendimos algunas cosas de inicio:\\
+	\\
+	-Python solo toma números enteros en las divisiones, por ello es importante que al dividir al menos uno de los dos tenga un decimal, aunque sea un .0.\\
+	-Las operaciones básicas de Python son +,-,*,/.\\
+	-Para elevar a una potencia se ponen dos asteriscos **\\
+	-Para que python te de el resultado es necesario poner el comando \textit{print}\\
+	\\
+	Finalmente, después de poner únicamente el problema con números vimos las variables, se puede guardar un valor a una variable. Así que unicamente asignamos un valor a cada variable de la fórmula y pusimos la fórmula a correr. \\
+	
+	
+	
+	
+	\section{Día 5}
+		
+	\title{\Huge Bitácora clase 5} \\
+	\\
+	En esta clase comenzamos viendo nuevos comandos de python y formas de agragar información, poner el símbolo "gato" para poner un comentario y las comillas sirven para hacer cadenas, texto que no afecta a las cuentas ''' con ellas se puede anexar texto multilinea. /n es un caracter de salto de linea una cadena en python es un grupo de caracteres que estan delimitados por una comilla al principio y al final.\\
+	\\
+	El caracter "Porcentaje" indica el lugar en donde se va a sustituir el valor de una variable y con .4f son floats y es cuantos flotantes queremos que nos muestre, si queremos 2 es "porcentaje".2f \\
+	Con "porcentaje" y:\\
+	\\
+	-g indicamos la posición en donde va a poner la primer variable \\
+	-s Indicamos que lo va a sustituir por una variable que contenga una cadena \\
+	-f es el número de flotantes que queremos poner \\
+	-e es para poner exponencial\\
+	-d es un numero entero\\
+	\\
+	
+	Python también tiene modulos, un módulo es una biblioteca donde están definidas una serie de funciones que se necesitan importar\\ 
+	Las palabras reservadas o comandos tienen un significado dentro de un lenguage de programación \\
+	Import es la palabra reservada para importar los módulos\\
+	
+	Cuando queremos poner una formula de un modulo se pone el nombre del módulo.lafunción, por ejemplo el módulo math nos permite hacer operaciones matemáticas más avanzadas, como las raices. Para sacar la raíz de 9 se pone\\
+	math.squrt (9)\\
+	
+	Para definir se utiliza def lo que nos permite definir nuestras variables y crear nuestros propios módulos.\\
+	\\
+	Al final de la clase vimos una breve introducción a LateX, que nos permite crear documentos, utilizamos la herramienta TeXstudio para fines didácticos y aprendimos comándos básicos de iniciar un documento, especificar el tipo, tamaño, etc. Y además vimos que también se pueden importar paquetes para tener funciones específicas.
+	
+	\section{Día 6}
+	\title{\Huge Bitácora clase 6} \\
+	\\
+	La clase comenzó viendo las diferencias entre virtualización y emulación, debido a que no todos tienen una maquina con sistema operativo linux y optaron por una máquina virtual. Una máquina virtual es más rápida que un emulador debido a que un emulador solo imita lso procesos pero en una maquina virtual es posible incluso instalar programas del sistema operativo que se virtualiza.\\
+	Otro concepto que vimos fue de bios, que es una memoria que contiene la informacion de la computadora: Procesador, memoria, características específicas del equipo.\\
+	\\
+	Hablamos sobre las distintas distribuciones de Linux adaptadas a necesidades específicas y tipo de computadora, las distribuciones tienen distintas versiones llamadas flavors y algunas de ellas son más ligeras que otras, lo cual permite que corran más rápido en computadoras con menor capacidad. El comando \$ top permite ver los núcleos de la computadora para ver la capacidad que tiene y decidir el sistema operativo. Nosotros utilizamos ubuntu y fedora por la cantidad de funciones que tienen y porque son sistemas fáciles de instala.\\
+	\\
+	Un algoritmo es un proceso de instrucciones finitas, en la clase aprendimos a hacer algoritmos. Primero planteando un problema y pensar en la solución de forma teórica. El problema de la clase fue ¿Cómo se define la raíz cuadrada? teníamos que crear una función que nos regresara la raíz cuadrada de un número para ello necesitábamos llegar a una aproximación debido a que la computadora no tiene a todos los números reales, por lo que hay un número mínimo que puede darnos.
+	Pensamos el problema a partir de un cuadrado, sabemos que un cuadrado con lado $\sqrt{x}$ tendrá por área x, sabemos también que un rectángulo con lados x y 1 tiene área x. Primero debemos buscar una forma de pasar del segundo cuadrado al primero.
+	Lo primero que hacemos es pensar en ir cambiando los valores a los lados hasta que su diferencia sea muy pequeña, por tanto primero hacemos un promedio muy lo llamamos h, después esa h se la restamos al otro número.\\
+	\\
+	Vimos otros conceptos y comandos de python. Una asignación consiste en asignar valores a una variable a partir de una función o directamente. Las asignaciones se hacen poniendo una letra, un signo de igual y lo que queremos guardar.
+	Un bloque en python es todo lo que esta indexado, todo lo que esta después de los dos puntos. En python son importantes los bloques debido a que nos permite de una forma visual anidar instrucciones y saber a que bloque corresponde un comando. Es en donde importan los espacios en python, además permiten hacer cadenas de instrucciones.\\
+	\\
+	Otra cosa importante de python es que no siempre es necesario que nos muestre el resultado de lo que hacemos, muchas veces lo queremos guardar para seguir haciendo más comandos y ocuparlo después. Pedirle al programa que lo imprima puede hacer que la computadora tarde más en correrlo, lo mejor es que el resultado se quede guardado hasta el momento en que lo necesitemos.\\
+	\\
+	Al final de la clase vimos un par de comandos que son muy importantes, el \textit{if} y el \textit{while}. El comando if es un condicional y permite poner ciertas condiciones que deberían cumplirse para que ejecute una acción, si esto no ocurre, el comando \textit{else} ejecuta otra acción con el resultado. \textit{while} es un comando que permite crear ciclos y que una acción se repita mientras ciertas condiciones se cumplan, en el momento en que la condición no se cumpla el programa se detiene. Estos dos comandos son muy importantes porque nos permiten crear programas básicos y algunos más complejos.
+	
+	\section{Día 7}
+	\title{\Huge Bitácora clase 7} \\
+	\\
+	Comenzamos trabajando con el problema del día anterior, que era definir la función raíz cuadrada a partir de un rectángulo con base x y altura 1, retomamos conceptos sobre dónde son importantes los espacios en python qué es en los bloques, ya que si algo no está en el bloque correcto el programa podría no correr adecuadamente o darnos resultados incorrectos.\\
+	\\
+	Primero, es importante definir los datos de entrada, que son los datos que ya sabemos a partir de los cuales vamos a trabajar. Es importante definir bien las variables y saber en qué variable es en donde se va a guardar el resultado para poder pedirlo al final. Primero es importante definir la función, que se compone de condiciones iniciales y cálculos para llegar a un resultado.\\
+	\\
+	Otra cosa importante es tener cuidado de no cometer errores, debido a que nos puede quitar mucho tiempo de trabajo, algo importante cuando cometemos un error y no sabemos por qué es conocer cuáles son algunos de los errores comunes y revisar si no hemos cometido alguno de ellos antes de ir directamente al código. Algunos de los errores más comunes es el uso de mayúsculas y minúsculas, muchas veces podemos tener el código muy bien hecho y de repente nos marca un error, debemos fijarnos que todas las letras que definimos sean mayúsculas o minúsculas según las hayamos definido. Otro de los errores tienen que ver con "dedazos" que cometemos cuando escribimos alguna letra de más o de menos y no nos dimos cuenta, también el equivocarnos con los signos, como cambiar un mayor qué por un menor qué o un más por un menos. Es importante también fijarnos que el código esté bien hecho aunque si corra el programa porque si cometimos un error en un signo puede darnos resultados incorrectos y nosotros no saberlo. Una forma de evitar ésto es siempre probarlo con la solución trivial y que ya sabemos el resultado para ver que estén bien cálculos más complejos.\\
+	\\
+	El problema de la clase fue definir la sucesión ulam con ayuda de los comandos \textit{if} y \textit{while}:\\
+	Si x es par x= x/2\\
+	Si x es impar X= 3x+1 \\
+	\\
+	Algo importante es siempre resolver el problema en lápiz y papel para después pasar al código. Finalmente lo resolvimos mediante el código:
+	\begin{verbatim} 
+	
+	def ulam (x):
+	print (x)		
+	while x>1:
+	p = x / 2
+	
+	if x == 2*p:
+	x = x/2
+	i=i+1
+	print (x)
+	else:
+	x = 3*x + 1
+	i=i+1
+	print (x)
+	return ('se hizo %d veces' % (i))
+	
+	\end{verbatim}
+	La letra i nos sirve como contador cuando ponemos i=0 antes un ciclo while y nos permkite saber cuántas veces se repitió el programa.\\
+	\section{Día 8}
+	\title{\Huge Bitácora clase 8} \\
+	\\
+	Comenzamos la clase viendo algunas de las funciones de Linux, cuando un proceso se ejecuta desde la terminal queda en primer plano y la terminal ya no se puede seguir usando a menos que se abra otra, para evitar esto se debe poner la aplicación en segundo plano, para ello solo es necesario poner el signo \& después del nombre de la aplicación y así sera posible seguir usando la misma terminal. Si lo que queremos es "matar" un proceso que se esté ejecutando, basta con poner ctrl+c, o kill -9 y el proceso se detendrá en ese momento. Si solo se quiere pausar se pone el comando ctrl+z y el proceso se quedará en pausa. \\
+	\\
+	\#!/usr/bin/python2.7 se pone como comentario en python y permite ejecutar el programa directamente desde la terminal sin la necesidad de tener el shell de python, y el comentario \# -*- coding: utf-8 -*- permite poner caracteres especiales los comentarios de phython, por ejemplo acentos, diéresis, símbolos, etc.\\
+	\\
+	Una clase son todos los atributos que comparte un grupo, uno en específico es un objeto de la clase, y cada objeto es distinto aunque comparta atributos y esté relacionado con otros objetos de su misma clase. Los objetos pueden interactuar entre sí, esto es, hay interacción entre objetos de la clase y también hay interacción entre clases.\\
+	Nosotros interactuamos con las computadoras y podemos hacer acciones a las que les llamamos métodos, por ejemplo "pedir la palabra". Todos los de la clase tenemos atributos en común y cada uno de nosotros es diferente, pedir la palabra por medio de levantar la mano es un método que tenemos nosotros como objeto. Las acciones que realiza el objeto se llaman métodos. Hay métodos que modifican el estado de un atributo.
+	La notación en python es objeto.metodo no es necesario que tengan parámetros.\\
+	\\
+	También se puede ver el tipo de dato que es en python (entero, flotante) con el comando \textit{type} que te arroja qué tipo de dato es, si se pone \textit{type.\_\_name\_\_.} solo arroja el tipo directo. Se pueden covertir los enteros a flotantes con el comando \textit{float()} y  \textit{str} convierte cualquier valor numérico en una cadena. La diferencia entre función y método es que una función no depende de un objeto un método sí.\\
+	\\
+	La cadenas se pueden  sumar "Ho"+"la", y también es posible importar bibliotecas y llamarlas con un nombre más corto o cómodo para nosotros con el comando \textit{import as} y así podemos cambiar de nombre a las bibliotecas para no escribirlo todo, se puede también importar solo algunas funciones para no tener que nombrar la biblioteca antes por ejemplo importar la raíz cuadrada para no tener que poner siempre la biblioteca con el comando \textit{from math import sqrt}. Se puede incluso importar todo utilizando un \* pero no es recomendable debido a que podría traernos muchos errores después, sobretodo si lo hacemos con dos bibliotecas que manejen los mismos nombres en algunas funciones.El comando input sirva para que el programa te pregunte los valores que quieres meter sin necesidad de poner todos.
+	
+	
+	
+	\section{Día 9}
+	\title{\Huge Bitácora clase 9} \\
+	\\
+	Comenzamos viendo cómo hacer un libro en LaTeX, comenzando por poner \textit{documentclass{book}} para que nos cree un documento con el formato de libro, y para que las secciones aparezcan en español utilizamos la biblioteca babel, que en un principio no se podía descargar, utilizamos synaptic en ubunto, que es un gestor de paquetes y nos permitio descargar los paquetes faltantes.\\
+	\\
+	Como el formato es un libro utilizamos chapter{} para crear capítulos dentro de él y utilizamos section{} para crear secciones, con tableofcontens te crea un índice donde automáticamente agrega las secciones. El paquete hyperref te permite agregar links de páginas directo al documento. Y el comando verbatim te permite agregar código sin cambiar el formato. Además hay paquetes que te permiten agregar bibliografía y acomodarla en la sección final, con el nombre del autor y el título del libro. Otra cosa importante es saber que hay paquetes en LaTeX y que todo está documentado en la web por lo que si queremos saber cómo funciona algo o cómo hacer una función en específico. \\
+	\\
+	Después de ver LaTeX, solucionamos un problema de la tarea, teníamos que hacer una función que nos diera el máximo común divisor de una pareja de números. Para comenzar a resolver el problema lo más importante fue entenderlo, por lo que lo primero que hicimos fue pensar en una solución a mano, utilizamos el algoritmo de Euclides, que ve a todo número natural como (p*q)+r y a partir de eso fuimos haciendo más cálculos en el pizarrón a modo de acomodarlo de la forma más conveniente sin hacerle nada. Con el comando \% es posible obtener el residuo de una división y fue lo que hicimos. Con eso solucionamos el problema, primero a mano y después en el programa. Es por ello que es importante primero pensar en una solución sin pensar en el código y después ver qué funciones necesitas para llegar al resultado. Otra cosa importante es siempre pensar en la solución más sencilla y que tenga menos lineas para no confundirnos, se  tiene que reflexionar si es la forma más corta o hay una mejor.\\
+	\\
+	Al final de la clase tuvimos problemas para importar archivos desde una carpeta, el problema fue que el directorio que estaba en la terminal desde donde abrimos el idle era diferente al directorio donde estaba guardado el programa que queríamos abrir. Para ello, con el comando cd es posible cambiar de directorios directamente en el idle para poder buscar los archivos que necesitamos. 
+	
+	
+	\section{Día 10}
+	\title{\Huge Bitácora clase 10} \\
+	\\
+	
+	A las variables se les pueden reasignar valores, cuando se utiliza un \textit{while} todo lo que está a la derecha de el se evalúa y se reasigna, teniendo un nuevo valor cada que se repite en ciclo. Otra forma de reasignar variables en python es con el comando \textit{a+=10} que toma a a y le suma 10, después ese número es de nuevo a. La función \textit{bool ()} sirve para evaluar una variable y saber si una variable tiene contenido, si está vacía nos arrojará "false" y si la variable tiene algo dirá "true". También te regresa false cuando ell valor de la variable es cero.\\
+	\\Después de ver las variables comenzamos con un tema importante de la clase: Las listas\\
+	L=[ ] es una lista\\
+	El comando \begin{verbatim}
+	if bool (L):
+	print L 
+	\end{verbatim}
+	Solo imprime la lista si tiene elementos.\\
+	\\
+	
+	\textit{L.append ()} sirve para agregar un elemento a la lista siempre que se use ese comando agregará el elemento al final de la lista y también es posible agregar una lista dentro de otra. \textit{L[0]} para ver el primer elemento de la lista y se refiere a que no tiene que avanzar ningún lugar para mostrarlo, es por ello que se usa el cero. \textit{len (L)} muestra la cantidad de elementos que tiene la lista. 
+	
+	\textit{L.insert(3,"otra cadena")} te permite insertar el  indice 3 un elemento y recorre los demás,  L.pop remueve un elemento si no se le dice cuál, borrará el último. Y podemos asignar el elemento que sacamos a una variable.\\
+	\\
+	
+	El índice es la forma en la que yo accedo a un elemento dentro de la lista y la posición es uno más que el índice.\\
+	
+	\textit{while bool(L):\\
+		L.pop()}\\
+	Sirven para vaciar la lista. y \textit{L.extend()}  agrega elementos a la lista, \textit{L[3]+L[len(L)-1]} junta elementos de la lista. Para ejecutar una instrucción en todos los elementos de la lista se utiliza \textit{for in} \\
+	\\
+	\textit{a = Range (10)} permite crear una lista con los números de cero hasta uno antes del valor que le ponemos
+	\textit{a = range (7, 15, 3)} es un intervalo de 7 a 15 con una separación de 3\\
+	\\
+	Los ciclos, condicionales, funciones, listas, valores numéricos y de cadena nos permiten hacer programas más complejos, siempre en un lenguaje de programación habrá estos comandos o sus equivalentes, y una vez sabiendo cómo resolver el problema se deben buscar las funciones que necesitamos en el lenguaje que queremos programar, es importante ver qué tipo de variables manejan, si tienen, condicionales, cómo funcionan, etc.\\
+	
+	
+	
+	
+	
+	
+	\section{Día 11}
+	\begin{center}
+		\title {\textcolor{red}{\Huge \textbf{Bitácora clase 11}} } 
+	\end{center}
+	
+	La clase comenzó viendo algunos comandos en python, por ejemplo, el comando \textit{input}  que muestra una cadena esperando una respuesta, lo cual es útil cuando es necesario calcular valores y que las variables las de el usuario. \\
+	\\
+	\section{LISTAS:}
+	Retomamos el concepto de lista y es es posible crear una lista metiendo los elementos manualmente de la forma \textbf{L = ["elementos que queremos agregar"]}. Está vez vimos una forma automatizada de crear las listas en caso de que nuestra lista tenga muchos valores, este es con el comando \textbf{range}, utilizado de la forma: \\
+	\begin{verbatim}
+	for 1 in range (n):
+	Valor = input ("dame el valor")
+	L.append(valor)
+	\end{verbatim}
+	Otro comando importante de las listas es \textbf{len}, que cuenta cuántos elementos tiene la lista. Esos fueron los promeros dos comandos importantes que vimos de las listas.
+	\section{EJERCICIO DE CLASE:}
+	
+	Comenzamos construyendo problemas básicos, ya que cuando se construye algo se puede ir avanzando mejor. El ejercicio fue hacer una lista que contuviera grados F, así como los grados correspondientes en C, para ello fueron utilizados los comandos previamente mencionados. Los datos de entrada son los datos que ya tenemos dados y los traducimos en argumentos de una función.
+	Las funciones \textbf{for in} me regresan un objeto, y \textbf{range} solo imprime el valor.\\
+	También vimos que es posible hacer funciones anidadas con paréntesis y se ejecuta primero la primera opción  y después las funciones de afuera.
+	El comando \textbf{enumerate} regresa por cada entrada de una lista el indice que le corresponde y después el valor. Y se utiliza de la forma 
+	\begin{verbatim}
+	for i,c in enumerate (L1):
+	L1[i] = c + 5
+	\end{verbatim}
+	lo que además suma 5. \textbf{Enumerate} nos permite crear un arreglo a partir de otro \textit{i} representa al índice y \textit{c} su valor
+	Para crear la lista 
+	\begin{verbatim}
+	n = 12; gradosC=[-5 + i * 0.5 for i in range(n)]
+	\end{verbatim}
+	
+	Finalmente en un problema la sintaxis más corta en general es la mejor y es importante saber cómo interpretar las cosas de la manera más sencilla posible.
+	
+	\section{GITHUB}
+	Ya que únicamente necesitabamos archivos .tex y .py en el repositorio, fue necesario aprender cómo evitar todos los demás archivos extra que nos generan tanto Texstudio como Python. Los archivos compilados son los .pyc y Latex nos crea archivos de tipo .tex, PDF, .pyc y .gz  que es una carpeta comprimida. \\
+	Github tiene la opción de ignorar archivos, y se utiliza poniendo *.log para que los ignore, para ello es necesario crear un archivo llamado .gitgignore en nuestro repositorio, así github no los subirá.
+	
+	
+	
+	\section{Día 12}
+
+	\begin{center}
+		\title {\textcolor{blue}{\Huge \textbf{Bitácora clase 12}} }  
+	\end{center}
+	
+	
+	\section*{LISTAS:}
+	
+	Utilizamos los comandos \textbf{range(len)} para recorrer la lista por los índices. 
+	Las sublistas son algo interesante que tienen los lenguajes, ya que es como crear listas temporales a partir de los elementos de la lista, por ejemplo \textbf{A [2:]}  regresa los elementos de la lista A a partir del índice 2, \textbf{A[1:3]} del uno hasta antes del 3, \textbf{A[:8]} todos los anteriores al índice que se puso \textbf{A[1:-1]} regresa todos excepto el primero y el último.\\
+	Las listas de python son de alguna forma listas circulares como si el último elemento estuviera conectado con el primero. \\
+	\textbf{Tabla[4:7][0:2]} Nos regresa una lista dentro de la lista
+	Para obtener sublistas\textbf{ B=A[:]} B es una sublista que contiene una copia de los elementos de A.\\
+	Dos listas son iguales si contienen los mismos elementos y se usa \textbf{==}, si yo quiero saber si es el mismo objeto le pregunto con \textbf{is}, por ejemplo \textbf{c == a} los hace iguales, si modifico cualquiera de las 2 ambas cambian. 
+	Cuando hablamos de un objeto hay atributos y métodos y éstos están guardados en una memoria.Las variables también se convierten en identificadores de una sección de memoria, que contiene algo muy específico. Igualar variables sirve para evitar un error cuando es una copia. Utilizar python con referencias a las listas nos permite un código más dinámico.
+	\section*{LaTeX:}
+	Aprendimos a hacer presentaciones en latex, utilizando\textbf{\\documentclass{beamer}} para hacer una presentación, además utilizamos distintos temas que se pueden cambiar y se agregan de la forma \textbf{\\usetheme{tema}}, para hacer una diapositiva se utiliza \textbf{\\begin{frame}}, para poner el título se utiliza \\frametitle. Al compilar el archivo textudio nos muestra un PDF, este PDF puede hacerse dinámico para que la presentación tenga efectos. 
+	
+	\section{Día 13}
+	\begin{center}
+		\title {\textcolor{green}{\Huge \textbf{Bitácora clase 13}} }  
+	\end{center}
+	
+	\section{Recursividad}
+	
+	Comenzamos la clase revisando unos problemas sel libro python fácil, del cuál se desplegaron muchas dudas sobre cómo resolverlos. El problema de la clase fue hacer un laberinto, en el cual debíamos saber como hacerle para dar un paso y para hacer el laberinto desde cero. Toda la case tratamos de resolver el problema del laberinto con información que ya sabíamos, como las listas, los llamados a las listas y el comando \textbf{if} y \textbf{else}.\\
+	
+	Las funciones recursivas se componen de dos elementos: bases recursivas y regla de recursividad que va a generar los términos recursivos.\\
+	La sucesión de Fibonacci va dececiendo.
+	La recursividad es cuando se procesa una lista y luego se hace un llamado a las funciones faltantes estas son subrutinas y procedimientos.\\
+	\\
+	\section{Ámbitos de validez}
+	
+	Los objetos de clasifican de acuerdo a su ámbito de validez que significa donde son visibles las variables. A las variables se les asigna un objeto, las variables locales solo existen mientras haga un llamado a la función (mientras se está ejecutando), las locales siempre están presentes.\\
+	Los ámbitos de validez se refieren a dos ticos de variables (en qué ambitos son validas)
+	Para evitar confusiones se agrega la palabra reservada \textit{global} para marcar cual es la variable.
+	También es importante etiquetar las variables de forma explícita para evitar confusiones.
+	
+	
+	
+	\section{Día 14}
+	\begin{center}
+	\title {\textcolor{orange}{\Huge \textbf{Bitácora clase 14}} }  
+	\end{center}
+	
+	Esta clase la utilizamos principalmente para revisar dudas sobre el laberinto, la mayor parte del tiemplo se empleó en la implementación del programa que pudiera resolver laberintos utilizando primero las listas para representar una matriz true, false y después los comando \textbf{if} y \textbf{else} para realizar las condiciones. Vimos el comando \textbf{elif} que te ahorra un bloque y sirve para poner un if y else al mismo tiempo y simplificar el código \\
+	La diferencia entre una lista y una tupla es que una tupla es una lista constante, para definirla se usan paréntesis en vez de corchetes, no se puede modificar. La lista si se puede modificar y se usan corchetes.\\
+	\\
+	La librería de python numpy tiene métodos de cosas científicas, y se instala por medio del comando \$pip istall,  pip sirve para instalar un modulo de python.
+	Vimos información sobre cadenas de ADN y cómo cómo contar las letras que se repiten por medio de tres comandos distintos.
+	
+	
+	
+	\chapter{Cuestionarios}
+	\section{Semana 1}
+	\title{\Huge Cuestionario} \\
+	\\
+	¿Qué es un sistema operativo?\\
+	R: Es un onjunto de instrucciones y programas que controlan los procesos básicos de una computadora, nos permite conectar el software con el hardware.\\
+	\\
+	¿Qué es un kernel?\\
+	R: Un núcleo o kernel es una parte fundamental del sistema operativo, es el núcleo en donde está compilado y a partir de ahí es que se desarrollan otros sistemas.\\
+	\\
+	¿Qué es linux?\\
+	R: Linux es el kernel de los sistemas operativos que se derivan de el.\\
+	\\
+	¿Qué son las distribuciones?\\
+	R:Son sistemas operativos cuyo núcleo es lunux y a partir de ahí derivan funciones específicas. Al tener el mismo núcleo no difieren tanto y hay distribuciones que derivan de otras.\\
+	\\
+	¿Qué es un shell?\\
+	R: Un shell es un intérprete de comandos, el puente entre el usuario y la computadora.\\
+	\\
+	¿Qué es un comando?\\
+	R: Es una palabra específica que permite dar una instrucción en un lenguaje de programación\\
+	\\
+	¿Qué es un bit?\\
+	R: Es una unidad de información en codigo binario. \\
+	\\
+	¿Cual es la diferencia entre 32 y 64 bits?\\
+	R: Una computadora con 64 bits tiene una mayor capacidad de información, por lo que es más rápida al realizar alguna actividad.\\
+	\\
+	¿Cómo puedo ver cómo funciona un comando?\\
+	R: Escribiendo man y el comando que necesitas saberr te manda al manual de ese comando\\
+	\\
+	¿Cómo funcionan los permisos en Linux?\\
+	R: Hay 3 tipos de permiso: De lectura, de escrutura y de ejecución. Además se puede especificar quien tiene cada permiso, todo el púbico, el usuario o unicamente root.\\
+	\\ 
+	¿Qué es un git?\\
+	R: Es un software de control de versiones que nos permite trabajar en equipo, o subir programas e interactuar con otros usuarios. Así como tener archivos guardados en la nube.
+	\\
+	\\
+	¿Qué es github?\\
+	R:Es un servidor de git que te permite tener acceso a la información por medio de una cuenta.\\
+	\\
+	¿Por qué es importante el pull y el push en git?\\
+	R: Debido a que así podemos tener las actualizaciones más recientes de nuestro repositorio y trabajar sobre la versión más nueva sin perder información.\\
+	\\  
+	¿Qué es un directorio?\\
+	R: Es una carpeta en dónde puede haber guardados más directorios y distintos tipos de archivos.\\
+	\\
+	¿Que son los archivos ocultos?\\
+	R: Son archivos que comienzan con un punto, en general son archivos importantes que no queremos que todos vean o configuraciones del sistema que no se deben borrar.\\
+	\\
+	¿Qué es vi?\\
+	R: Es un editor de textos que nos permite crear archivos desde la terminal y en cualquier lenguaje.\\
+	\\
+	¿Cómo se crea un directorio?\\
+	R: Con el comando mkdir, o directamente en la carpeta donde se quiere crear\\
+	\\
+	¿Qué es un IDE?\\
+	R: un entorno de programacion integrado, está desarrollado para el aprendizaje en python. Tiene un editor especializado, una forma de comunicarse con el intérprete e incorpora una herramienta para la depuración \\
+	\\
+	¿Qué es python?\\
+	R:Es un lenguaje de programación que te permite crear programas para resolver problemas específicos. Se usa principalmente en el ámbito científico. \\
+	\\
+	¿Por qué utilizamos la versión 2 de Python?\\
+	R: Debido a que al ser más antigua está mejor desarrollada y hay más paquetes ya hechos\\
+	\\
+	¿Qué es una variable en python?\\
+	R: Es una letra o palabra a la que se le asigna un valor\\
+	\\
+	¿Qué es un módulo?\\
+	R: Es una biblioteca donde estan definidas una serie de funciones que se necesitan importar \\
+	\\
+	¿Cuales son las formas de poner comentarios en Python?\\
+	R:Con un signo de gato o con comillas\\
+	\\
+	¿Cuál es el equivalente del apt de ubuntu en fedora?\\
+	R: dnf\\
+	\\
+	¿Para qué sirve el símbolo de porcentaje en Python?\\
+	R: Para indicar el lugar en donde se va a sustituir un valor o el lugar en donde se va  aplicar la instrucción.\\
+	\\
+	¿Qué módulo de python nos permite hacer operaciones matemáticas?\\
+	R: Math\\
+	\\
+	¿Cómo se importa un paquete en python?\\
+	R: Con el comando import y después el paquete\\
+	\\
+	¿Qué es Latex?\\
+	Es un lenguaje de programación que nos permite hacer archivos de texto con formato.\\
+	\\
+	¿Para qué sirve TeXstudio?\\
+	R: Es una herramienta que te permite crear archivos de latex con una interfaz gráfica más amigable.\\
+	\\
+	\section{Semana 2}
+	\title{\Huge Cuestionario semana 2} \\
+	\\
+	¿Cuál es la diferencia entre visualización y emulación?\\
+	Una máquina virtual es más rápida que un emulador
+	debido a que un emulador solo imita lso procesos pero en una maquina virtual
+	es posible incluso instalar programas del sistema operativo que se virtualiza.\\
+	\\
+	¿Qué es el bios?\\
+	Es una memoria que contiene la informacion de la computadora: Procesador, memoria, características específicas
+	del equipo.\\
+	\\
+	¿Por qué hay distribuciones de linux que corren más rápido que otras?\\
+	Porque depende de que recursos utilizan en una computadora, es importante ver las características específicas de la computadora para decidir que sistema operativo poner.\\
+	\\
+	¿Para qué sirve el comando \$top?\\
+	Permite ver los núcleos de la computadora para ver la capacidad que tiene.\\
+	\\
+	¿Qué es un algoritmo?\\
+	Un algoritmo es un proceso de instrucciones finitas.\\
+	\\
+	¿Por qué una computadora hace aproximaciones?\\
+	Debido a que es imposible que una computadora tenga a todos los números reales, ya que son infinitos. Por lo que la computadora hace aproximaciones con números muy similares y poco margen de error, pero no podrá ser exacta porque hay un límite de números que nos puede dar.\\
+	\\
+	¿Qué es una asignación?\\
+	Una asignación consiste en asignar valores a una variable a partir de una función o directamente.\\
+	\\
+	¿Qué es un bloque en python?\\
+	Un bloque en python es todo lo que esta indexado, todo lo que esta después de los dos puntos.\\
+	\\
+	¿Por qué son importantes los bloques?
+	que nos permite de una forma visual anidar instrucciones y saber a que bloque corresponde un comando.\\
+	\\
+	¿Por qué no es recomendable imprimir el resultado cada vez que se ejecuta un programa?\\
+	Debido a que muchas veces no necesitamos el resultado hasta el final e imprimirlo cada vez hace que el programa corra mucho más lento que si no lo imprime.\\
+	\\
+	¿Para qué es el comando \textit{if}?\\
+	Es un condicional y permite poner ciertas condiciones que deberían cumplirse para que ejecute una acción, si esto no ocurre, el comando else ejecuta otra acción con el resultado.\\
+	\\
+	¿Para qué sirve el comando \textit{while}?
+	while es un comando que permite crear ciclos y que una acción se repita mientras ciertas condiciones se cumplan, en el momento en que la condición no se cumpla el programa se detiene.\\
+	\\
+	¿Cuál es la diferencia entre if y while?\\
+	El comando if necesita una condición y solo se ejecuta una vez, mientras que el comando while crea ciclos y se ejecuta hasta que se cumpla la condición.\\
+	\\
+	¿Qué son los datos de entrada?\\
+	Son los datos que ya sabemos a partir de los cuales vamos a trabajar.\\
+	\\
+	¿Cuáles son los elementos de una función?\\
+	Se compone de condiciones iniciales y cálculos para llegar a un resultado.\\
+	\\
+	¿Qué es lo primero que se debe verificar si se comete algún error?\\
+	Revisar que no se haya cometido algún error común antes de modificar el código.\\
+	\\
+	¿Cuáles son los errores más comunes?\\
+	Cambiar mayúsculas y minúsculas, errores de dedo, cambio de signos.\\
+	\\
+	¿Por qué es importante resolver el problema en lápiz y papel antes de ir directo al código?\\
+	Porque así nos aseguramos que el resultado es correcto, además de que ya sabemos cómo resolver el problema y ya solo se necesita buscar funciones que nos ayuden.\\
+	\\
+	¿Qué es lo primero que se debe poner al probar un programa?\\
+	Se deben poner cosas triviales que ya sabemos el resultado para ver que lo hace bien, a partir de ello se pueden hacer problemas más complejos.\\
+	\\
+	¿Cómo se hace un contador?\\
+	Nombramos una variable, generalmente la letra i y la igualamos a cero antes del ciclo, de tal manera que irá aumentando cada vez que el ciclo se realiza, lo cual nos permite saber cuantas veces se hizo. \\
+	\\
+	¿Cómo se ejecuta un proceso en segundo plano?\\
+	Poniendo el nombre, un espacio y el símbolo \&\\
+	\\
+	¿Cómo se mata un proceso?\\
+	Con el comando kill -9 o poniendo ctrl+c\\
+	\\
+	¿Cómo se ejecuta un programa en python desde la terminal?\\
+	Poniendo un comentario al principio del código con \#!/usr/bin/python2.7\\
+	\\
+	¿Cómo se pueden poner caracteres especiales en un comentario en python?\\
+	Poniendo el comentario \# -*- coding: utf-8 -*- al principio del documento\\
+	\\
+	¿Qué es una clase?\\
+	Son todos los atributos que comparte un grupo de objetos.\\
+	\\
+	¿Qué es un método?\\
+	Las acciones que realiza un objeto\\
+	\\
+	¿Cuál es la notación para llamar a un método en python?\\
+	objeto.método(el método)\\
+	\\
+	¿Cuál es la diferencia entre función y método?\\
+	Una función no depende de un objeto un método sí\\
+	\\
+	¿para qué sirve importar bibliotecas con nombres más cortos?\\
+	Para no tener que repetir el nombre cada vez que se llama a una función.\\
+	\\
+	¿Por qué es recomendable importar todas las funciones de una biblioteca?\\
+	Porque se pueden confundir con otras funciones al llamarlas. \\
+	\\
+	¿Qupe biblioteca de latex nos permite agregar contenido automático en español?\\
+	Babel\\
+	\\
+	¿Cuál es el gestor de paquetes que se utilizó en ubuntu?\\
+	Synaptic\\
+	\\
+	¿Cómo se hace para agregar código e LaTeX?\\
+	Utilizando en paquete \textit{verbatim}\\
+	\\
+	¿Cómo se obtiene el residuo de una división en python?\\
+	Con \%\\
+	\\
+	¿Cómo se le pueden reasignar valores a una variable?\\
+	Con el nombre de la variable con un += y el número que se quiere sumar para que se sume y se reasigne.\\
+	\\
+	¿Para qué sirve la función \textit{bool}? \\
+	Para evaluar una variable y saber si una variable tiene contenido, si está vacía nos arrojará ”false” y si la variable tiene algo dirá ”true”. También te regresa false cuando el valor de la variable es cero.\\
+	\\
+	¿Qué es una lista?\\
+	Un conjunto de elementos que están guardados en una variable\\
+	\\
+	¿Cuál es la diferencia entre índice y posición?\\
+	El índice es la forma en la que yo accedo a un elemento dentro de la lista la posición es uno más que el índice.\\
+	\\
+	¿Para qué sirve \textit{range}?\\
+	Permite crear una lista con los números de cero hasta uno antes del valor que le ponemos, además permite crear un intervalo y dar un número de número que va avanzando.\\
+	
+	
+	
+	
+	\section{Semana 3}
+	\begin{center}
+		\title {\textcolor{red}{\Huge \textbf{Cuestionario clase 11}} } 
+	\end{center}
+	\textbf{¿Para qué sirve el comando \textit{range}?}\\
+	Para crear una lista automática en un determinado intervalo.\\
+	\\
+	\textbf{¿Para qué sirve el comando \textit{len}?}\\
+	Para contar los elementos de una lista\\
+	\\
+	\textbf{¿Qué son los datos de entrada?}
+	Los datos de entrada son los datos que ya tenemos dados y los traducimos en argumentos de una función\\
+	\\
+	\textbf{¿Como son las funciones anidadas}\\
+	Se utilizan paréntesis y se ejecuta primero la primera opción y después las funciones de afuera.\\
+	\\
+	\textbf{¿Para qué se utiliza \textit{enumerate}}
+	Regresa por cada entrada de una lista el indice que le corresponde y después el valor.\\
+	\\
+	\textbf{¿Para que sirve la carpeta .gitignore?}\\
+	Para que github ignore los archivos que no queremos subir
+	
+	
+		\begin{center}
+		\title {\textcolor{blue}{\Huge \textbf{Cuestionario clase 12}} }  
+	\end{center}
+	\textbf{¿Qué es una sublista?}\\
+	Son listas temporales a partir de los elementos de la lista\\
+	\\
+	\textbf{¿Cómo se obtiene una sublista?}\\
+	Con el comando B=A[:], ene l que B es una copia de A\\
+	\\
+	\textbf{¿Cuando dos listas son iguales?}\\
+	Si contienen los mismos elementos y se usa == para igualarlas.\\
+	\\
+	\textbf{¿Para qué nos sirve asignar una lista a dos variables?}\\
+	Para que se guarde una copia modificable.\\
+	\\
+	\textbf{¿Qué comando se usa si se quiere recorrer una lista por indices?}\\
+	\textit{for i in rage}\\
+	\\
+	\textbf{¿Y si se quiere recorrer por sus valores}\\
+	Con el nombre de la lista \\
+	\\ 
+	\textbf{Para qué sirve documentclass{beamer}?}\\
+	Para hacer presentaciones en latex
+	
+	
+	\begin{center}
+		\title {\textcolor{green}{\Huge \textbf{Cuestionario clase 13}} }  
+	\end{center}
+	\textbf{¿De qué forma se puede representar una matriz sin el comando matix?}\\
+	Como una lista de listas\\
+	\\
+	\textbf{¿Cuál es la mejor forma de resolver los problemas?}\\
+	Por partes, primero lo más básico y después cosas más complejas\\
+	\\
+	\textbf{¿Qué es una función recursiva?}\\
+	Una función que se llama a sí misma\\
+	\\
+	\textbf{¿Cuáles son los dos elementos de las funciones recursivas?}\\
+	Se componen de dos elementos: bases recursivas y regla de recursividad\\
+	\\
+	\textbf{¿Cómo se llama a las funciones recursivas?}\\
+	Como procedimientos y subrutinas\\
+	\\
+	\textbf{¿Qué es el ámbito de validez}\\
+	Es dónde son visibles las variables\\
+	\\
+	\textbf{¿Por qué es importante etiquetar explícitamente las variables?}\\
+	Para evitar confusiones.
+	
+	\begin{center}
+		\title {\textcolor{orange}{\Huge \textbf{Cuestionario clase 14}} }  
+	\end{center}
+	\textbf{¿Cómo se puede representar una matriz?}\\
+	Con una lista de listas\\
+	\\
+	\textbf{¿Qué comandos nos permiten dar condiciones para ejecutar una acción?}\\
+	Los comandos \textit{if y else}\\
+	\\
+	\textbf{¿Para qué sirve el comando \textit{elif}?}\\
+	Para escribir directo la condición si es lo que sigue despuŕs de un \textit{else}\\
+	\\
+	\textbf{¿Cual es la diferencia entre una lista y una tupla?}\\
+	La diferencia entre una lista y una tupla es que una tupla es una lista constante, para definirla se usan paréntesis en vez de corchetes, no se puede modificar. La lista si se puede modificar y se usan corchetes.\\
+	\\
+	\textbf{¿Para qué sirve la librería numpy?}\\
+	Tiene métodos de asuntos científicos\\
+	\\
+	\textbf{¿Para qué sirve \textit{pip}?}\\
+	pip sirve para instalar un modulo de python\\
+	\\
+	
+	\chapter{Bitácoras de problemas}
+	\section{Tarea 4}
+		\begin{center}
+		\title {\Huge Problema 1. MCD} 
+	\end{center}
+	
+	
+	Para el máximo común divisor, primero fue necesario definir qué es, y utilizar el algoritmo de Euclides que permite obtener el MCD a partir de ir dividiendo los números entre sí y obtener el residuo, reasignando valores, y repetir. Para ello lo primero que se hizo fue utilizar el comando módulo \% que devuelve el residuo de dos valores y después nadamas se reasignaron valores de nuevo.
+	
+		\begin{center}
+		\title {\Huge Problema 2} 
+	\end{center}
+	\textit{Este problema consistió en determinar en qué tiempos se alcanza una altura en específico.}\\
+	\\
+	Éste problema fue resuelto de una manera muy rápida debido a que ya habíamos hecho uno en clase en donde calculamos la altura, esto facilitó el proceso, ya que solo se trató de despejar y posteriormente nombrar variables y aplicar la fórmula ya dada.
+	
+	\section*{Listas}
+	
+	Para pasar al problema con listas lo unico que cambió es que ésta vez las variables fueron dadas en una lista, así se pudieron meter al problema normalmente.
+	
+		\begin{center}
+		\title {\Huge Problema 3} 
+	\end{center}
+	
+	\textit{El problema consistió en convertir F a C y viceversa}\\
+	\\
+	
+	El este problema lo primero que se tuvo que analizar fue cómo se transformaban los grados manualmente, una vez teniendo la fórmula solo se daban las variables y listo. Para convertir los grados que el usuario quiera se agregó un \textit{input()} en el script.
+	
+	\section*{Listas}
+	
+	Para la parte de las listas fue necesario primero definir un intervalo en el cual queriamos trabajar, posteriormente se relacionó el primer intervalo hecho con la fórmula para transformar, así se creó una tabla de conversiones en un intervalo dado.
+	
+	\begin{center}
+		\title {\Huge Problema 4} 
+	\end{center}
+	
+	\textit{Calcular el n-esimo término de la suc de fibonacci con n natural y 0}\\
+	\\
+	En un principio parecía difícil, pero al analizar el problema sin programar nada se tomo en cuenta el patrón, cada termino es la suma de los dos términos anteriores, al notar esto al principio se intentó hacer directo pero no funciono, comencé haciendo las condiciones en caso de que fueran los primeros y posteriormente se hizo la función llamándose a si misma.\\
+	\\
+	\section*{Listas}
+	Para realizar este problema con listas lo primero fue utilizar la función \textit{range} para crear una lista  y posteriormente otra que llamara a la lista anterior. Así nos aprecian el n-enésimo término y los anteriores
+	
+	\begin{center}
+		\title {\Huge Problema 5} 
+	\end{center}
+	
+	\textit{Calcular la suma de los primeros n naturales}\\
+	\\
+	Este problema no fue difícil, ya que únicamente se utilizó la fórmula de Euler para obtenerlo. Así que solo se asignaron variables y se ejecutó la fórmula.\\
+	\\
+	\section{Listas}
+	Para esta sección solo se hizo una lista a la que se le fueron agregando elementos con la función \textit{for i in range} y después realizar la suma de cada uno, fue menos fácil pero más completo.
+	
+	\begin{center}
+		\title {\Huge Problema 6} 
+	\end{center}
+	
+	\textit{Calcular el promedio de 10 datos}\\
+	\\
+	Primero fue fácil debido a que unicamente se metieron las variables de los 10 datos y finalmente eso entre 10, así solo era necesario asignar las variables y sacar el promedio.\\
+	\\
+	\section*{Listas}
+	Para las listas en este problema ya se pudo modificar el código de tal manera que no solo funcionara para 10 datos sino para todos los posibles, se creó una lista vacía en la que se asignaran los valores que el usuario da y eso dividido entre n, en este caso las listas lo facilitaron.
+	
+		\begin{center}
+		\title {\Huge Problema 7} 
+	\end{center}
+	
+	\textit{Calcular el promedio de 10 datos, el mayor número y el menor}\\
+	\\
+	En este caso se utilizo el promedio que ya se había hecho anteriormente, al principio fue difícil obtener el mayor y el menor de los número debían compararse todos, así que agregué 10 lineas en las que comparaba a un número con todos los demás, así hasta obtener un código muy largo pero funcional y no supe después como hacerlo más pequeño.\\
+	\\
+	\section*{Listas}
+	Para el caso de las listas no supe como aplicarlas debido a que el un principio hice una función complicada que no pude mejorar y no era compatible con las listas.
+	
+	
+	\begin{thebibliography}{9}
+\bibitem{libro}
+\textit{Python fácil}
+		Pérez Castaño Arnaldo, 2016\\
+		\\
+		\bibitem{libro}
+\textit{A Primer on Scientifi c Programming with Python}
+Hans Petter Langtangen, 2016
+	
+	\end{thebibliography}
+	
+\end{document}
