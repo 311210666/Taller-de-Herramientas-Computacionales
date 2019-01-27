@@ -4,6 +4,7 @@
 \usepackage{graphicx}
 \usepackage{enumitem}
 \usepackage[utf8]{inputenc}
+\usepackage{xcolor}
 \graphicspath{{/home/stephanie/Escritorio/THC/Taller-de-Herramientas-Computacionales/Clases/Latex/Imagenes/}}
 
 \title{\Huge Taller de Herramientas Computacionales}
@@ -16,33 +17,21 @@
 		\includegraphics[scale=0.40]{1.png}	
 	\end{center}
 	\newpage
-	\title{\Huge Bitácora clase 12} \\
-	\\
-	
-	input(archivo)
-	include (archivo)
-	range(len) para recorrer por los indices 
-	Sublistas es algo interesante que tienen los lenguajes, A [2:] es regresa a partir del índice 2 
-	A[1:3] del uno hasta antes del 3 
-	A[1:-1] todos los anteriores al índice que puse
-	A[1:-1] regresa todos exepto el primero y el último 
-	Las distas de python son de alguna forma listas circulares como si el último elemento estuviera conectado con el primero 
-	Tabla[4:7][0:2] Nos regresa una lista dentro de la lista
-	Cuando gusrdamos las variables son dos objetos independientes 
-	: son para obte 
-	ner sublistas B=A[:] es una sublista que contiene una copia de los elementos de A
-	¿Cuando dos listas son iguales?
-	si contienen los mismos elementos y se usa ==
-	Si yo quiero saber si es el mismo objeto le pregunto con is,
-	c = a los hace iguales, si modifico cualquiera de las 2 pues cambia 
-	Cuando hablamos de un objeto hay atributos y métodos y estan guardadas en una memoria.
-	Las variables también se convierten en identificadores de una sección de memoria, cual? una que contiene algo muy específico. Nos sirve igualarla para cuando es más evidente a la hora de escribir las variables.  Sirve para eviitar un error cuando es una copia. Utilizar python con referencias a las listas nos permite un códico más dinámico.
-	si quiero recorrer una lista por indices:
-	for i in rage
-	si es por sus valores es el nombre de la lista
-	
-	paquetes en latex con vimer para presentación
-	
-presentaciones en latex
+	\begin{center}
+	\title {\textcolor{blue}{\Huge \textbf{Bitácora clase 12}} }  
+	\end{center}
+
+
+	\section*{LISTAS:}
+
+	Utilizamos los comandos \textbf{range(len)} para recorrer la lista por los índices. 
+	Las sublistas son algo interesante que tienen los lenguajes, ya que es como crear listas temporales a partir de los elementos de la lista, por ejemplo \textbf{A [2:]}  regresa los elementos de la lista A a partir del índice 2, \textbf{A[1:3]} del uno hasta antes del 3, \textbf{A[:8]} todos los anteriores al índice que se puso \textbf{A[1:-1]} regresa todos excepto el primero y el último.\\
+	Las listas de python son de alguna forma listas circulares como si el último elemento estuviera conectado con el primero. \\
+	\textbf{Tabla[4:7][0:2]} Nos regresa una lista dentro de la lista
+	Para obtener sublistas\textbf{ B=A[:]} B es una sublista que contiene una copia de los elementos de A.\\
+	Dos listas son iguales si contienen los mismos elementos y se usa \textbf{==}, si yo quiero saber si es el mismo objeto le pregunto con \textbf{is}, por ejemplo \textbf{c == a} los hace iguales, si modifico cualquiera de las 2 ambas cambian. 
+	Cuando hablamos de un objeto hay atributos y métodos y éstos están guardados en una memoria.Las variables también se convierten en identificadores de una sección de memoria, que contiene algo muy específico. Igualar variables sirve para evitar un error cuando es una copia. Utilizar python con referencias a las listas nos permite un código más dinámico.
+\section*{LaTeX:}
+	Aprendimos a hacer presentaciones en latex, utilizando\textbf{\\documentclass{beamer}} para hacer una presentación, además utilizamos distintos temas que se pueden cambiar y se agregan de la forma \textbf{\\usetheme{tema}}, para hacer una diapositiva se utiliza \textbf{\\begin{frame}}, para poner el título se utiliza \\frametitle. Al compilar el archivo textudio nos muestra un PDF, este PDF puede hacerse dinámico para que la presentación tenga efectos. 
 	
 \end{document}

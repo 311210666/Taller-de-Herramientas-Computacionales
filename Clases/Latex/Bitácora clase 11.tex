@@ -16,50 +16,42 @@
 	\includegraphics[scale=0.40]{1.png}	
 \end{center}
 \newpage
-\title{  \textcolor{red }{red Bitácora clase 11} } \\
+\begin{center}
+\title {\textcolor{red}{\Huge \textbf{Bitácora clase 11}} } 
+\end{center}
+
+La clase comenzó viendo algunos comandos en python, por ejemplo, el comando \textit{input}  que muestra una cadena esperando una respuesta, lo cual es útil cuando es necesario calcular valores y que las variables las de el usuario. \\
 \\
-
-
-
-input: muestra una cadena esperando una respuesta.
-Como se meten los valores a la lista?
+\section{LISTAS:}
+Retomamos el concepto de lista y es es posible crear una lista metiendo los elementos manualmente de la forma \textbf{L = ["elementos que queremos agregar"]}. Está vez vimos una forma automatizada de crear las listas en caso de que nuestra lista tenga muchos valores, este es con el comando \textbf{range}, utilizado de la forma: \\
+\begin{verbatim}
 for 1 in range (n):
 	Valor = input ("dame el valor")
 	L.append(valor)
-es un aforma de que te pida la lista 
-a = [5,3,5,6]
-r=0
-for valor in a:
-r = r+ valor
-r/len (a) \#esto no es un promedio porque no es flotante
-float (r)/len(a) 
-	
+\end{verbatim}
+Otro comando importante de las listas es \textbf{len}, que cuenta cuántos elementos tiene la lista. Esos fueron los promeros dos comandos importantes que vimos de las listas.
+\section{EJERCICIO DE CLASE:}
 
-Cuando se construye algo se puede ir avanzando en la información. 
-a partir de la información de máximo y mínimo obtenemos grados F
-Los datos de entrada los traducimos en argumentos de una función.
-Los archivos compilados son los .pyc
-latex: los que no son .tex y pdf y de python .pyc
-extención gz es una carpeta comprimida. github tiene una opcion de archivos a ignorar, y se utiliza poniendo *.log para que ognore los archivos ignore 
-cuando en un for in utilicemos la i, utilicemos range, cuando va con otra lista le ponemos un nombre representativo.
-\#Las primeras dos funciones me regresan un objeto, y la ultima solo imprime el valor. Lo importante es que regrese algo
-
-¿Cómi calculamos el área de una curva?
-Tarea: si yo tengo la ecuación $y= 2x+5x^{2}-6x^{3}+12$
-
-$[a,b] n_{1} $
-
-Funciones anidadas con paréntesis y se ejecuta primero la primera opción  y después las funciones de afuera
-enumerate: regresa por cada enyrada de una lista primeroo el indice que le corresponde y despues el valor.
+Comenzamos construyendo problemas básicos, ya que cuando se construye algo se puede ir avanzando mejor. El ejercicio fue hacer una lista que contuviera grados F, así como los grados correspondientes en C, para ello fueron utilizados los comandos previamente mencionados. Los datos de entrada son los datos que ya tenemos dados y los traducimos en argumentos de una función.
+Las funciones \textbf{for in} me regresan un objeto, y \textbf{range} solo imprime el valor.\\
+También vimos que es posible hacer funciones anidadas con paréntesis y se ejecuta primero la primera opción  y después las funciones de afuera.
+El comando \textbf{enumerate} regresa por cada entrada de una lista el indice que le corresponde y después el valor. Y se utiliza de la forma 
+\begin{verbatim}
 for i,c in enumerate (L1):
 L1[i] = c + 5
-sumó 5 
-Revisar cada uno de los comandos de L y hacer un ejemplo
-Enumerate nos permite crear un arreglo a partir de otro i representa al índice y c su valor
-Para crear la lista n = 12; gradosC=[-5 + i * 0.5 for i in range(n)] crea otra lista 
-La sintaxis más corta en general es la mejor y es importante saber cómo interpretar. Hemos visto distintas formas de hacer lo mismo.
-Parentesis llaves y corchetes en python: Corchetes sirven para definir una lista y agregar elementos.
-utilizando una lista hacer en el zip con una lista de listas de equivalencia
+\end{verbatim}
+lo que además suma 5. \textbf{Enumerate} nos permite crear un arreglo a partir de otro \textit{i} representa al índice y \textit{c} su valor
+Para crear la lista 
+\begin{verbatim}
+n = 12; gradosC=[-5 + i * 0.5 for i in range(n)]
+\end{verbatim}
+ 
+Finalmente en un problema la sintaxis más corta en general es la mejor y es importante saber cómo interpretar las cosas de la manera más sencilla posible.
+
+\section{GITHUB}
+Ya que únicamente necesitabamos archivos .tex y .py en el repositorio, fue necesario aprender cómo evitar todos los demás archivos extra que nos generan tanto Texstudio como Python. Los archivos compilados son los .pyc y Latex nos crea archivos de tipo .tex, PDF, .pyc y .gz  que es una carpeta comprimida. \\
+Github tiene la opción de ignorar archivos, y se utiliza poniendo *.log para que los ignore, para ello es necesario crear un archivo llamado .gitgignore en nuestro repositorio, así github no los subirá.
+
 
 
 
